@@ -3,6 +3,7 @@
 Fixes #(issue) [JIRA]
 
 ## 커밋 📝
+
 <!-- START pr-commits -->
 <!-- END pr-commits -->
 
