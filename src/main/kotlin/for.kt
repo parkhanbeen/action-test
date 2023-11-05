@@ -4,6 +4,7 @@ fun main() {
     forex1()
     println("=========")
     forex2()
+    println("=========")
 }
 
 fun forex() {
