@@ -2,6 +2,7 @@ package ch20
 
 import ch12.Person
 
+// 사람 프린트
 fun printPerson(person: Person?) {
     // scope function
     person?.let {
