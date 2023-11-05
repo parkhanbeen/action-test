@@ -9,12 +9,10 @@ jobs:
     name: Pull Request Body
     runs-on: ubuntu-latest
     timeout-minutes: 3
-#    if: startsWith(github.event.pull_request.head.ref, 'release/')
     steps:
       - name: Pull Request Body
         uses: technote-space/pr-commit-body-action@v1
         with:
-#          EXCLUDE_MESSAGES: ${{ env.EXCLUDE_MESSAGES }}
           TITLE: "## 커밋 📝",
           LINK_ISSUE_KEYWORD: ${{ (startsWith(github.head_ref, 'release/') && 'closes') || '' }}
           FILTER_PR: true
