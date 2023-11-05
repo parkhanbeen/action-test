@@ -1,3 +1,6 @@
+/**
+ * 고양이 클래스.
+ */
 class Cat(
     species: String,
 ) : Animal(species, 4) {
