@@ -16,6 +16,8 @@ fun printPerson(person: Person?) {
 //    }
 }
 
+
+// 사람
 class Person(
     val name: String,
     val age: Int,
