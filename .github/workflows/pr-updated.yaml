@@ -1,8 +1,4 @@
-on:
-  push:
-    pull_request:
-      branches:
-        - main
+on: pull_request_target
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -16,7 +12,7 @@ jobs:
     timeout-minutes: 3
     if: github.event.pull_request.head.user.id == github.event.pull_request.base.user.id
     steps:
-      - uses: technote-space/pr-commit-body-action@v1
+      - uses: technote-space/pr-commit-body-action@gh-actions
         with:
           TITLE: "## 커밋 📝"
           FILTER_PR: true
