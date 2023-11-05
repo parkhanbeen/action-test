@@ -8,7 +8,7 @@ fun main() {
     }
 
     // 불변
-//    val numbers = listOf(100, 200)
+    //    val numbers = listOf(100, 200)
     // 가변
     val numbers = mutableListOf(100, 200)
     val emptyList = emptyList<Int>()
