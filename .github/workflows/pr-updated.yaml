@@ -14,6 +14,6 @@ jobs:
     steps:
       - uses: technote-space/pr-commit-body-action@gh-actions
         with:
-          TITLE: "## 커밋 📝"
+#          TITLE: "## 커밋 📝"
           FILTER_PR: true
           CHANGE_TEMPLATE: "- [ ] ${TITLE} (#${NUMBER}) @${AUTHOR}"
